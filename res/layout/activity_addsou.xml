@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="250dp"
+  android:layout_height="400dp"
+  android:orientation="vertical"
+  android:background="@drawable/white">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="18sp"
+    android:text="请选择要上传的文件:"
+    android:textColor="@drawable/blue"/>
+  <TextView 
+    android:id="@+id/tv_addsou_path"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="0dp"
+    android:textSize="18sp"
+    android:textColor="@color/deep_gray"/>
+  <ListView 
+    android:id="@android:id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+  >
+  </ListView>
+  <LinearLayout 
+  	android:gravity="center"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/white">
+	
+	<Button     
+    android:id="@+id/btn_addsou_ok"  
+    android:layout_width="0dp"    
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:layout_margin="5dp"
+    android:background="@color/blue"
+    android:textColor="#ffffff"  
+    android:text="确定"  
+    />
+    <Button     
+    android:id="@+id/btn_addsou_cancle"  
+    android:layout_width="0dp"    
+    android:layout_height="40dp"
+    android:layout_weight="1"
+    android:layout_margin="5dp"
+    android:background="@color/blue"
+    android:textColor="#ffffff"    
+    android:text="取消"  
+    />
+	
+  </LinearLayout>
+</LinearLayout>

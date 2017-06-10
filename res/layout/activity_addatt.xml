@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<com.tims.util.TitleLayout
+   	    android:id="@+id/titlelayout_addatt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	</com.tims.util.TitleLayout>
+	<ListView 
+    	    android:id="@+id/list_addatt"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1">
+    </ListView>
+    <Button
+ 	    android:id="@+id/addatt_ok"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_margin="20dp"
+ 	    android:textColor="#ffffff"
+ 	    android:background="#90d7ec"
+ 	    android:text="完成"
+ 	    android:layout_gravity=""></Button>
+</LinearLayout>

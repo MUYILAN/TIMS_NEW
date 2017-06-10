@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#90d7ec"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_tab01"
+            style="@style/rb_tab_style"
+            android:checked="true"
+            android:text="我的课堂"/>
+
+        <RadioButton
+            android:id="@+id/rb_tab02"
+            style="@style/rb_tab_style"
+            android:text="我的课表" />
+
+       
+
+        <RadioButton
+            android:id="@+id/rb_tab03"
+            style="@style/rb_tab_style"
+            android:text="个人中心"  />
+    </RadioGroup>
+
+    <com.tims.util.TabFragmentHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </com.tims.util.TabFragmentHost>
+</LinearLayout>

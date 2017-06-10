@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <com.tims.util.TitleLayout
+   	    android:id="@+id/titlelayout_mf04"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	</com.tims.util.TitleLayout>
+
+    <com.tims.util.LineView
+        android:id="@+id/line_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.tims.util.LineView
+        android:id="@+id/line_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:heading="姓名" />
+    <com.tims.util.LineView
+        android:id="@+id/line_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:heading="性别" />
+    <com.tims.util.LineView
+        android:id="@+id/line_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:heading="电话" />
+    <com.tims.util.LineView
+        android:id="@+id/line_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+ 	    android:id="@+id/btn_modifyinfo"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:textColor="#ffffff"
+ 	    android:background="#90d7ec"
+ 	    android:layout_margin="20dp"
+ 	    android:text="修改资料"/>
+ 	<Button
+ 	    android:id="@+id/btn_logout"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:textColor="#ffffff"
+ 	    android:background="#90d7ec"
+ 	    android:layout_marginTop="0dp"
+ 	    android:layout_marginLeft="20dp"
+ 	    android:layout_marginRight="20dp"
+ 	    android:text="退出登录"/>
+</LinearLayout>

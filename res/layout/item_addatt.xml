@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+            android:id="@+id/tv_addatt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingTop="4dp"
+            android:textSize="18sp"/>
+    <TextView 
+            android:id="@+id/tv_addatt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_alignTop="@id/tv_addatt_id"
+            android:layout_toRightOf="@id/tv_addatt_id"
+            android:textSize="18sp"/>
+    
+			<RadioGroup 
+	   		 android:id="@+id/rg_addatt"
+	   		 android:layout_width="wrap_content"
+	   		 android:layout_height="wrap_content"
+	   		 android:layout_alignParentRight="true"
+	   		 android:orientation="horizontal"
+	   		 android:checkedButton="@+id/rb_addatt_2">
+	   		 
+		    <RadioButton 
+		        android:id="@+id/rb_addatt_2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="已到"
+		        android:textColor="@color/blue"
+		        android:layout_margin="3dp"/>
+		    
+		    <RadioButton 
+		        android:id="@+id/rb_addatt_1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="请假"
+		        android:textColor="@android:color/holo_orange_light"
+		        android:layout_margin="3dp"/>
+		    <RadioButton 
+		        android:id="@+id/rb_addatt_0"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="未到"
+		        android:textColor="@color/deep_gray"
+		        android:layout_margin="3dp"/>
+		</RadioGroup>
+
+</RelativeLayout>

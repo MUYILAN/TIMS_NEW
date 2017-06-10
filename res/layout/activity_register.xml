@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#90d7ec" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:padding="14dp"
+            android:src="@drawable/arrow_left" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8.0dp" >
+
+            <Button
+                android:id="@+id/btn_teareg"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/left_white"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="教师注册"
+                android:textColor="#90d7ec"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_stureg"
+                android:layout_width="90dip"
+                android:layout_height="25dip"
+                android:background="@drawable/right_transparent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="学生注册"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_regfragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dp" >
+		
+		<fragment
+			android:id="@+id/fragment_reg"
+			android:name="com.tims.activity.TeaRegFragment"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+		</FrameLayout>
+</LinearLayout>

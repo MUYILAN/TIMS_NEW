@@ -1,0 +1,15 @@
+<!-- 条形设置条属性 -->
+<resources>
+    <declare-styleable name="LineView">
+        <!-- 主题 -->
+        <attr name="subject" format="string" />
+        <!-- 标题 -->
+        <attr name="heading" format="string" />
+        <!-- 内容 -->
+        <attr name="content" format="string" />
+        <!-- 是否有开关 -->
+        <attr name="canNav" format="boolean" />
+        <!-- 是否是列表中最后一个 -->
+        <attr name="isBottom" format="boolean" />
+    </declare-styleable>
+</resources>
