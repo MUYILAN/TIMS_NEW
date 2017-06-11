@@ -20,23 +20,6 @@ import android.content.Context;
 
 
 public class Utility {
-
-	/*public synchronized static List<Course> handleCoursesResponse(Context context, String response){
-		String[] allCourses = response.split(",");
-		courses = new Course[allCourses.length];
-		name = new String[allCourses.length];
-		for(int i = 0; i < allCourses.length; i++ ){
-			String[] array = allCourses[i].split("\\|");
-			LogUtil.d("array0", array[0]);
-			LogUtil.d("array1", array[1]);
-			courses[i] = new Course(Integer.parseInt(array[0]),array[1]);
-			name[i] =array[1];
-		}
-		return false;
-	}*/
-	/**
-	* 
-	*/
 	public static List<Subject> handleSubjectResponse(Context context, String response) {
 		List<Subject> subjectList = new ArrayList<Subject>();
 		try {

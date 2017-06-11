@@ -7,7 +7,10 @@
     <TextView 
         android:id="@+id/tv_sou_filename"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textSize="18sp" 
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
     
     <RelativeLayout 
         android:layout_width="match_parent"
@@ -17,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="5dp"/>
         <TextView 
 	        android:id="@+id/tv_sou_teachername"
 	        android:layout_width="match_parent"

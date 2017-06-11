@@ -1,8 +1,6 @@
 package com.tims.activity;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -70,22 +68,22 @@ public class AddSouActivity extends ListActivity {
 		// TODO Auto-generated method stub
 		showProgressDialog();
 		
-		try {SharedPreferences pref=ContextUtil.getContext().getSharedPreferences("course",0);
+		SharedPreferences pref=ContextUtil.getContext().getSharedPreferences("course",0);
 		int courseid = pref.getInt("id", 0);
 		pref=ContextUtil.getContext().getSharedPreferences("user",0);
 		String teacherid = pref.getString("acc", "");
 		SimpleDateFormat fm = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
 		Date date = new Date(System.currentTimeMillis());
-		String strDate = URLEncoder.encode(fm.format(date),"utf-8");
+		String strDate = fm.format(date);
 		
 		Map<String,String> params=new HashMap<String,String>();
-		params.put("courseid", courseid);
+		params.put("courseid", Integer.toString(courseid));
 		params.put("teacherid", teacherid);
 		params.put("date", strDate);
 		params.put("filename", filename);
 //		String message = "courseid="+courseid+"&teacherid="+teacherid+"&date="+strDate+"&filename="+filename;
 		String url = HttpUtil.BASE_URL + "AddSouServlet";
-		HttpUtil.uploadFileRequest(url, curPath, filename, new HttpCallbackListener() {
+		HttpUtil.uploadFileRequest(url, curPath, params, new HttpCallbackListener() {
 			@Override
 			public void onFinish(final String response) {
 				LogUtil.d("上传资料的返回信息", response);	
@@ -125,10 +123,6 @@ public class AddSouActivity extends ListActivity {
 				
 			}
 		});
-		} catch (UnsupportedEncodingException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
 	}
 
 	private void getFileDir(String filePath) {	
